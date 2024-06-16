@@ -29,6 +29,24 @@ public class Karyawan extends Staff {
         this.listPresensiStaff = listPresensiStaff;
     }
 
+    public int getUnit() {
+
+        int unit = 0;
+
+        for (Presensi presensi : listPresensiStaff) {
+
+            if (presensi.isHadir()) {
+
+                unit++;
+
+            }
+
+        }
+
+        return unit;
+
+    }
+
     @Override
     public String toString() {
         return super.toString() + ", Salary: " + salary + ", List Presensi Staff: " + listPresensiStaff;

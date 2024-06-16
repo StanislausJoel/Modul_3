@@ -5,14 +5,14 @@ import java.util.List;
 public class MatkulAmbil {
     
     private MataKuliah matkul;
-    private List<Presensi> presensi;
+    private List<Presensi> listPresensi;
     private int n1;
     private int n2;
     private int n3;
 
-    public MatkulAmbil(MataKuliah matkul, List<Presensi> presensi, int n1, int n2, int n3) {
+    public MatkulAmbil(MataKuliah matkul, List<Presensi> listPresensi, int n1, int n2, int n3) {
         this.matkul = matkul;
-        this.presensi = presensi;
+        this.listPresensi = listPresensi;
         this.n1 = n1;
         this.n2 = n2;
         this.n3 = n3;
@@ -26,12 +26,12 @@ public class MatkulAmbil {
         this.matkul = matkul;
     }
 
-    public List<Presensi> getPresensi() {
-        return presensi;
+    public List<Presensi> getListPresensi() {
+        return listPresensi;
     }
 
-    public void setPresensi(List<Presensi> presensi) {
-        this.presensi = presensi;
+    public void setPresensi(List<Presensi> listPresensi) {
+        this.listPresensi = listPresensi;
     }
 
     public int getN1() {
@@ -60,7 +60,7 @@ public class MatkulAmbil {
 
     @Override
     public String toString() {
-        return "Matkul: " + matkul + ", Presensi: " + presensi + ", N1: " + n1 + ", N2: " + n2 + ", N3: " + n3;
+        return "Matkul: " + matkul + ", Presensi: " + listPresensi + ", N1: " + n1 + ", N2: " + n2 + ", N3: " + n3;
     }
 
 }

@@ -29,6 +29,28 @@ public abstract class Dosen extends Staff {
         this.matkulDiajar = matkulDiajar;
     }
 
+    public int getUnit() {
+
+        int unit = 0;
+
+        for (MatkulAjar matkulAjar : matkulDiajar) {
+
+            for (Presensi presensi : matkulAjar.getPresensiStaff()) {
+
+                if (presensi.isHadir()) {
+
+                    unit++;
+
+                }
+
+            }
+
+        }
+
+        return unit;
+
+    }
+
     @Override
     public String toString() {
         return super.toString() + ", Departemen: " + departemen + ", Matkul Diajar: " + matkulDiajar;
