@@ -32,7 +32,8 @@ public class Main {
 
         // Membuat data dummy MatkulAmbil
         MatkulAmbil matkulAmbil1 = new MatkulAmbil(matkul1, presensiList, 80, 85, 90);
-        List<MatkulAmbil> matkulAmbilList = new ArrayList<>(Arrays.asList(matkulAmbil1));
+        MatkulAmbil matkulAmbil2 = new MatkulAmbil(matkul2, presensiList, 75, 80, 85);
+        List<MatkulAmbil> matkulAmbilList = new ArrayList<>(Arrays.asList(matkulAmbil1, matkulAmbil2));
 
         // Membuat data dummy Mahasiswa
         MahasiswaSarjana mhsSarjana = new MahasiswaSarjana("Mahasiswa 1", "Jakarta", "2000-01-01", "08123456789", "NIM-001", "Informatika", matkulAmbilList);
